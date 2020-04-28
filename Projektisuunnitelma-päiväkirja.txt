@@ -1,0 +1,28 @@
+Projektin tarkoituksena on toteuttaa harjoitustyö OHSU sovelluskurssille.
+Sovelluksena on openweatherin avoimeen dataan perustuva sää-appi.
+
+Koska kokemusta vuesta ei ole paljoa ja jotta asiassa pääsee vauhdikkaasti alkuun, tukeudun projektin alussa pitkälle Tyler Pottsin youtubessa esittelemään esimerkkiin "Build a Weather App in VueJS | VueJS Beginner Tutorial". https://www.youtube.com/watch?v=JLc-hWsPTUY
+Toimivan esimerkin lisäksi näen tässä lähestymistavassa hyödylliseksi hyvien käytänteiden oppimisen.
+hra. Pottsilla on visuaalinen silmä kohdillaan ja esimerkissä käytettiinkin montaa hienoa css / vue kikkaa, (jos sää yli 16 astetta, tausta muuttuu, hakukentän muutos kun kenttä aktiivinen)
+
+Omana lisänä tutoriaaliin nähden on muutettu kieli suomeksi, osin apin kautta ja osin datebuilderin päivän nimiä muuttamalla.
+Lisäsin myös viiden seuraavan päivän ennusteen omiin kenttiinsä.
+
+
+Ennuste voidaan toteuttaa kahdella tapaa, joko käyttämällä onecall APIa, joka sisältää myös nykyhetken sään, muttei tue kuin koordinaatteihin perustuvaa paikkahakua.
+Toinen vaihtoehto on käyttää openweatherin forecast APia (tässä taitaa olla enemmän kyse parametreista kuin APIsta).
+Jostain syystä en saanut toimimaan keypress -bindingia siten, että se olisi "laukaissut" kaksi erillistä funktiota, vaikka tämän pitäisi olla mahdollista vue 2.3 -> .
+Tästä syytä jouduin kiertämään ongelmaa huonolla tavalla.
+
+Tässä projektissa päädyin käyttämään ennusteisiin kyselyä,  joka mahdollisti ennusteen hakemisen paikan perusteella.
+Koitin myös toista vaihtoehtoa ja tästä syystä koodissa on tähän viittaavia turhia rivejä, koska koko projektista loistaa uuden oppimisen kaari, en nähnyt tarpeelliseksi poistaa näitä.
+Mikäli projektista tehtäisiin oikea julkaistava versio, pitäisi projekti kuitenkin kirjoittaa alusta asti uudelleen.
+
+Projektin aikana aiempi päätös jatkaa jonkun toisen pohjasta osoittautui todella typeräksi vaihtoehdoksi.
+Jos nyt tekisin koko projektin alusta, aloittaisin sen sivun taittamisella pelkillä tyhjillä laatikoilla, tämän projektin edetessä vastaan ongelmia CSS määrittelyn kanssa, enkä saanut divejä käyttäytymään aivan haluamallani tavalla.
+Lisäksi määrittelisin datassa ensin kaikki muuttujat joita tarvitsen ja hakisin tiedot niihin yhdellä kertaa, jolloin html-puolesta tulisi selkeämpi.
+
+
+
+
+
