@@ -1,6 +1,6 @@
 <template>
-    <div id="app" :class="typeof weather.main != 'undefined' && weather.main.temp > 16 ? 'warm' :'' ">
-        <!--jos lämpö on määritelty ja se on yli 16 astetta käytä lämmintä taustakuvaa (oletus kylmä) -->
+ <!--jos lämpö on määritelty ja se on yli 16 astetta käytä lämmintä taustakuvaa (oletus kylmä) -->
+    <div id="app" :class="typeof weather.main != 'undefined' && weather.main.temp > 16 ? 'warm' :'' ">     
         <main>
             <div class="search-box">
                 <input type="text" class="search-bar" placeholder="Search..." v-model="query" @keypress="fetchWeather" />
@@ -182,7 +182,7 @@
         background-image: url("./assets/aurinko.png")/* kuva kun lämpötila yli 16 astetta*/
     }
     main {
-        min-height: 100vh;
+        min-height: 100%;
         padding: 25px;
         background-image: linear-gradient( to bottom, rbga(0, 0, 0, 0.25) rgpa(0, 0, 0, 0.75));
     }
@@ -238,7 +238,7 @@
         display: inline-block;
         padding: 10px 25px;
         color: #fff;
-        font-size: 25vw;
+        font-size: 800%;
         font-weight: 900;
         text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         background-color: rgba(255, 255, 255, 0.25);
@@ -248,7 +248,7 @@
     }
     .weather-box .weather {
         color: #fff;
-        font-size: 10vw;
+        font-size: 250%;
         font-weight: 700;
         font-style: italic;
         text-shadow: rgba(0, 0, 0, 0.25);
