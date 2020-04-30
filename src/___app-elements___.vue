@@ -37,10 +37,9 @@
                     </div>
                     
                 </div>
-                <!--haetaan tulevien päivien ennusteet-->
                 <div class="forecast-container">
                     <div class="forecast">
-                        <div class="weekday">{{ getWeekday(1) }}</div> <!--haetaan viikonpäivä getWeekday funkiosta parametrina + x päivää -->
+                        <div class="weekday">{{ getWeekday(1) }}</div>
                         <div><img :src="'http://openweathermap.org/img/wn/' + fcDay1Icon + '@2x.png'" class="forecast-icon" /></div>
                         <div>{{Math.round(fcDay1Temp)}} °C</div>
                     </div>
@@ -238,7 +237,7 @@
         display: inline-block;
         padding: 10px 25px;
         color: #fff;
-        font-size: 25vw;
+        font-size: 800%;
         font-weight: 900;
         text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
         background-color: rgba(255, 255, 255, 0.25);
@@ -248,10 +247,11 @@
     }
     .weather-box .weather {
         color: #fff;
-        font-size: 10vw;
+        font-size: 200%;
         font-weight: 700;
         font-style: italic;
         text-shadow: rgba(0, 0, 0, 0.25);
+        padding-top:5%;
         padding-bottom: 5%;
     }
     .weather-icon-wrapper {}
